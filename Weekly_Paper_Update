@@ -45,4 +45,3 @@ Let It Flow: Agentic Crafting on Rock and Roll, Building the ROME Model within a
 
 智能体式构建 (Agentic crafting) 要求大语言模型 (LLM) 在现实环境中通过多轮操作来执行任务，具体包括采取行动、观察结果并迭代优化其生成的制品。尽管该能力至关重要，但开源社区目前仍缺乏一个系统化、端到端的生态系统来简化智能体的开发流程。为此，我们提出了智能体学习生态系统 (Agentic Learning Ecosystem, ALE)，这是一个旨在优化智能体大语言模型生产流水线的基础设施。ALE 包含三个核心组件：ROLL，一个用于权重优化的后训练 (post-training) 框架；ROCK，一个用于生成训练轨迹的沙盒环境管理器；以及 iFlow CLI，一个用于高效上下文工程 (context engineering) 的智能体框架。我们发布了 ROME (ROME is Obviously an Agentic Model)，这是一个基于 ALE 构建、并在超过一百万条轨迹上训练而成的开源智能体模型。我们的方法包含用于合成复杂行为的数据组合协议 (data composition protocols)，以及一种新颖的策略优化算法——基于交互的策略对齐 (Interaction-based Policy Alignment, IPA)。IPA 算法在语义交互块而非单个 Token 上分配信用，从而提升了长视野 (long-horizon) 训练的稳定性。在实证评估中，我们在一个结构化设置中对 ROME 进行了测试，并推出了 Terminal Bench Pro 基准测试，该基准在规模和污染控制方面均有改进。ROME 在 SWE-bench Verified 和 Terminal Bench 等多个基准测试中均展现出强劲性能，这证明了 ALE 基础设施的有效性。
 
-标签：
