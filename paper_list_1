@@ -1,0 +1,43 @@
+CVPR
+1. Notes-guided MLLM Reasoning: Enhancing MLLM with Knowledge and Visual Notes for Visual Question Answering
+2. Question-Aware Gaussian Experts for Audio-Visual Question Answering
+3. Separation of powers: On segregating knowledge from observation in LLM-enabled knowledge-based visual question answering
+4. CL-MoE: Enhancing Multimodal Large Language Model with Dual Momentum Mixture-of-Experts for Continual Visual Question Answering
+5. FRAMES-VQA: Benchmarking Fine-Tuning Robustness across Multi-Modal Shifts in Visual Question Answering
+6. AVQACL: A Novel Benchmark for Audio-Visual Question Answering Continual Learning
+7. Augmenting Multimodal LLMs with Self-Reflective Tokens for Knowledge-based Visual Question Answering
+8. Marten : Visual Question Answering with Mask Generation for Multi-modal Document Understanding
+9. Alignment, Mining and Fusion: Representation Alignment with Hard Negative Mining and Selective Knowledge Fusion for Medical Visual Question Answering
+10. ReasonDrive: Efficient Visual Question Answering for Autonomous Vehicles with Reasoning-Enhanced Small Vision-Language Models
+11. Multimodal Rationales for Explainable Visual Question Answering
+12. Ask and Remember: A Questions-Only Replay Strategy for Continual Visual Question Answering
+13. ReasonVQA: A Multi-hop Reasoning Benchmark with Structural Knowledge for Visual Question Answering
+14. Overcoming Dual Drift for Continual Long-Tailed Visual Question Answering
+15. Consistency and Uncertainty: Identifying Unreliable Responses From Black-Box Vision-Language Models for Selective Visual Question Answering
+16. How to Configure Good In-Context Sequence for Visual Question Answering 
+
+NeurIPS 2024 — Main Conference
+17. Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs
+18. Compositional Chain-of-Thought Prompting for Multimodal Models
+19. Multimodal Rationales: Interpreting Vision–Language Models
+20. Benchmarking Multimodal Reasoning Beyond Recognition
+
+NeurIPS 2025 — Main Conference
+21. SAVVY: Spatial Awareness via Audio-Visual LLMs through Seeing and Hearing
+22. PRIMT: Preference-Based Reinforcement Learning with Multimodal Feedback
+23. Perception Encoder: The best visual embeddings are not at the output of the network
+24. ElasticMM: Efficient Multimodal LLM Serving with Elastic Parallelism
+25. KVZip: Query-Agnostic KV Cache Compression
+
+
+How to read this list correctly (important)
+
+CVPR vs NeurIPS terminology gap
+
+CVPR term 							NeurIPS equivalent
+-----------------------------------------------------------------------
+Visual Question Answering 			Multimodal reasoning
+VQA benchmark 						Evaluation of multimodal models
+Vision-Language Model 				Multimodal LLM
+Chain-of-Thought VQA 				Compositional / explicit reasoning
+Embodied VQA 						Agentic multimodal learning
