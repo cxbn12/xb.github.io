@@ -101,3 +101,134 @@ JMLR/TMLR（不是“会议”，但你问到 JMLR）
 	•	你希望的关键词范围（只要 VQA/visual question answering，还是包含 question answering / VideoQA / AVQA / KBVQA）
 
 因为 OpenReview 的 accept 列表很长，“VQA/MLLM 边界”你可以设严格或宽松；我可以按你现在的使用习惯：只取标题/摘要明确是 VQA/QA 的（最干净）。
+
+6）
+A️ 严格清单
+→ NeurIPS 2024–2025 主会（Accept oral/spotlight/poster）里，标题/摘要明确是 VQA / Question Answering 的论文清单
+（最干净，几乎零争议）
+
+NeurIPS 2024–2025「主会」中明确属于 VQA / Question Answering 的论文
+标准：
+	•	出现在 NeurIPS Accept（oral / spotlight / poster）
+	•	标题或摘要中 明确是 QA / Question Answering / Answering / Asking
+
+   NeurIPS 2024（Main Conference）
+	1.	LOVA3: Learning to Ask, Answer and Assess for Visual Question Answering
+	•	类型：VQA 任务建模
+	•	特点：把 asking / answering / evaluation 统一建模
+	•	这是 NeurIPS 风格 VQA 的代表作
+	2.	CVQA: A Culturally Diverse Multilingual Visual Question Answering Benchmark
+	•	类型：VQA Benchmark
+	•	特点：文化 / 多语言偏差
+	•	明确是 VQA（但偏 dataset）
+	3.	Overcoming Biases in Audio-Visual Question Answering
+	•	类型：AVQA
+	•	特点：audio + vision QA
+	•	NeurIPS 更喜欢这种“bias / generalization”角度
+
+⸻
+
+   NeurIPS 2025（Main Conference，来自你看到的 Accept Tabs）
+
+注意：2025 年 NeurIPS VQA 数量本身就不多，这是正常现象
+
+	4.	Wiki-PRF: Knowledge-Based Visual Question Answering via Multimodal Retrieval and Feedback
+	•	类型：KB-VQA
+	•	特点：RAG + VQA
+	•	明确是 QA（知识驱动）
+	5.	CoralVQA: Robust Visual Question Answering via Conceptual Alignment
+	•	类型：VQA
+	•	特点：concept-level alignment
+	•	偏理论 / 表征
+
+	A 类结论：
+	NeurIPS 主会中，“名字就叫 VQA / QA 的论文”非常少
+	但每一篇都偏“方法论 / 偏差 / 评估 / 统一建模”
+
+B️ 宽口径清单（更符合 NeurIPS 风格）
+→ NeurIPS 2024–2025 主会中，VQA / VideoQA / AVQA / Embodied QA / Multimodal Reasoning / Tool-augmented QA
+（适合做 survey / 找研究方向）
+
+  NeurIPS 2024–2025 中「VQA 等价范式」的 MLLM / Multimodal Reasoning
+
+  这些论文 不写 VQA，但在做 “给定视觉输入 + 语言查询 → 推理 / 决策 /回答”
+
+  	🧠 NeurIPS 2024
+	  •	Compositional Chain-of-Thought Prompting for Multimodal Models
+	→ 多模态 CoT，本质就是 Reasoning-VQA
+		•	Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs
+	→ 分析 MLLM 在视觉问答中的失败模式
+		•	Benchmarking Multimodal Reasoning Beyond Recognition
+	→ 把 VQA 从“识别”升级为“推理”
+
+	⸻
+	
+	🧠 NeurIPS 2025（你截图里的典型）
+		•	SAVVY: Spatial Awareness via Audio-Visual LLMs through Seeing and Hearing
+	→ AVQA + 空间推理
+		•	PRIMT: Preference-Based Reinforcement Learning with Multimodal Feedback
+	→ Agent 回答 / 决策，本质是 QA + alignment
+		•	Perception Encoder: The Best Visual Embeddings Are Not at the Output
+	→ VQA / MLLM 的 perception 基础设施
+		•	KVZip / ElasticMM（系统类）
+	→ 为长上下文、多轮 QA 服务
+
+	B 类结论（非常重要）
+		NeurIPS = 把 VQA 当成 “Multimodal Reasoning / Alignment / Agents” 的一个子问题
+
+C️ 对照表
+→ CVPR / ICCV vs NeurIPS 在 VQA 上的命名与研究范式对照
+（非常适合写 related work 或给老板/审稿人解释）
+
+维度 				CVPR / ICCV 							NeurIPS
+是否常用 VQA 这个词 	✅ 非常常用 								❌ 很少
+论文命名 			“Visual Question Answering for …” 		“Multimodal Reasoning / Alignment / Feedback”
+核心关注 			任务 / benchmark / 架构 					理论、泛化、偏差、统一建模
+Dataset paper 		非常欢迎 								有，但更挑
+MLLM 				工程 + 任务 								原理 + 机制
+审稿口味 			“效果 + 新任务” 							“你到底学到了什么？”
+
+一句话总结（你以后可以直接用）：
+	CVPR asks “Can you answer better?”
+	NeurIPS asks “What does it mean to answer?”
+
+D️ 投稿导向
+→ 如果你现在做的是 VQA/MLLM，投 CVPR 还是 NeurIPS？怎么改标题和 framing？
+
+如果你现在做的是：
+① 新 VQA 任务 / Benchmark / Dataset
+👉 CVPR / ICCV
+	•	再加 NeurIPS 的话，要强调 bias / generalization
+
+② VQA + Reasoning / CoT / Tool / Memory
+👉 CVPR + NeurIPS 都可
+	•	CVPR：强调任务提升
+	•	NeurIPS：强调 reasoning formalization
+
+③ MLLM / Agent / RAG / Feedback / Alignment
+👉 NeurIPS > CVPR
+
+④ 系统 / 推理效率 / 长上下文 QA
+👉 NeurIPS / ICML
+
+⸻
+
+标题改写示例（非常关键）
+
+CVPR 风格
+
+ToolVQA: Multi-Step Visual Question Answering with External Tools
+
+NeurIPS 风格
+
+Structured Tool-Augmented Reasoning for Multimodal Large Language Models
+
+👉 同一工作，两种 framing
+
+⸻
+
+🎯 总结
+	•	VQA 不是消失了
+	•	它在 NeurIPS 被“抽象化”了
+	•	CVPR：VQA 是 task
+	•	NeurIPS：VQA 是 reasoning case
