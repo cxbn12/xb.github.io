@@ -1,0 +1,182 @@
+================================
+一、AI 领域公认的「A 类顶级 Venues」
+================================
+1️⃣ 通用 AI / ML（皇冠级）
+
+任何一个都单独撑得起 CV / 博士毕业 / tenure
+
+	•	NeurIPS
+	•	ICML
+	•	ICLR
+	•	AAAI
+	•	IJCAI
+
+👉 这是 AI 的“五大”
+
+⸻
+
+2️⃣ 计算机视觉（CV）A 类
+	•	CVPR
+	•	ICCV
+	•	ECCV
+
+（有时加：BMVC ≈ A−）
+
+⸻
+
+3️⃣ 自然语言处理（NLP）A 类
+	•	ACL
+	•	EMNLP
+	•	NAACL
+	•	COLING（略低于 ACL，但仍 A−/A）
+
+⸻
+
+4️⃣ 数据挖掘 / 信息检索（DM / IR）
+	•	KDD
+	•	WWW / The Web Conference
+	•	SIGIR
+	•	WSDM
+
+⸻
+
+5️⃣ 人机交互 / 多模态 / 系统 AI
+	•	CHI（HCI 顶级）
+	•	ACM MM (ACMMM)（多模态 / V+L）
+	•	ICMR（多媒体检索，略 A−）
+
+⸻
+
+6️⃣ 强化学习 / 机器人 / 控制
+	•	ICRA
+	•	IROS
+	•	CoRL
+	•	RSS
+
+⸻
+
+7️⃣ 表示学习 / 理论 ML
+	•	AISTATS
+	•	UAI
+	•	COLT
+	•	ALT
+
+⸻
+==================================
+二、顶级 Journal（同等或高于 A 类会议）
+==================================
+很多在 职称/基金/通信作者评价 中 比会议更硬
+
+通用 AI / ML
+	•	JMLR
+	•	TMLR
+
+IEEE / ACM 顶刊
+	•	IEEE TPAMI
+	•	IEEE TNNLS
+	•	IEEE TAI
+	•	IEEE TMM
+	•	ACM TOG（图形）
+	•	ACM TIST
+
+⸻
+
+⚠️ 三、你列表中「常被误认为 A 类，但其实不是」的情况
+
+❌ 不是 A 类（但可以是 B / C / Workshop）
+	•	IEEE Access
+	•	各种 “IEEE International Conference on XXX”
+	•	IGARSS、BIBM、FIT、CIACON、PRICAI
+	•	ACCV（区域顶会，≈ A−）
+	•	BMVC（A−）
+
+👉 评审不会把它们当 CVPR / ICCV 同档
+
+⸻
+
+❌ 完全不算 venue 的（机构 / 学校 / 社群）
+	•	Stanford University / MIT / CMU / KAIST
+	•	MBZUAI / HKUST / NUS
+	•	Greeks in AI / QueerInAI / YouthLACIGF
+
+👉 这些是 组织/社群，不是发表 venue
+
+⸻
+
+🎯 四、如果你是做「VQA / MLLM / Multimodal AI」
+
+你的 核心 A 类目标池 应该是：
+
+必选
+	•	CVPR / ICCV / ECCV
+	•	NeurIPS / ICML / ICLR
+	•	ACL / EMNLP
+
+次优但仍强
+	•	ACM MM
+	•	AAAI / IJCAI
+	•	IEEE TPAMI / TMM / TAI
+
+=======================================================
+VQA / MLLM / 多模态 AI 专属 A 类 Venues 排名表（2024–2026）
+=======================================================
+🏆 VQA / MLLM 顶级 A 类 Venues（第一梯队）
+
+目标：博士毕业 / 顶级工业研究 / 评审无争议
+
+🌟 SSS 级（天花板）
+
+通用 AI / 推理 / MLLM
+	•	NeurIPS
+	•	ICML
+	•	ICLR
+
+👉 做 reasoning / agent / CoT / structured reasoning / self-distillation 的首选
+
+⸻
+
+计算机视觉（VQA 主战场）
+	•	CVPR
+	•	ICCV
+	•	ECCV
+
+👉 VQA / KVQA / VideoQA / Medical VQA 的绝对主场
+
+⸻
+
+NLP / 语言推理（文本 + 视觉）
+	•	ACL
+	•	EMNLP
+
+👉 VQA 中偏 reasoning / language / knowledge / explanation
+
+⸻
+
+🥇 A+ 级（顶级但略低于皇冠）
+
+非常稳的 A 类，CV/AI 都认可
+
+通用 AI
+	•	AAAI
+	•	IJCAI
+
+多模态 / 多媒体
+	•	ACM MM (ACMMM)
+
+理论 & 表示
+	•	AISTATS
+	•	UAI
+
+⸻
+
+🥈 A− 级（仍是强 A，尤其对 VQA）
+
+好于 90% IEEE conference，但不等于 CVPR
+
+视觉 / 多模态
+	•	BMVC
+	•	WACV（近几年 VQA/VideoQA 很强）
+
+NLP 扩展
+	•	NAACL
+	•	COLING
