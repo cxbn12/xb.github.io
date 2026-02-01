@@ -1,0 +1,463 @@
+=============================================================
+按 Venue 精准检索 VQA / VLM / KB-VQA / VideoQA 论文的完整实战指南
+=============================================================
+我们分 5 大入口：
+
+1️⃣ CV / 多模态顶会（CVPR / ICCV / ECCV / ACM MM）
+2️⃣ NLP / Reasoning 顶会（ACL / EMNLP / NAACL / NeurIPS / ICLR）
+3️⃣ 医疗 / 遥感 / 通信专项 venue
+4️⃣ Journal（TPAMI / TMM / TAI / JMLR）
+5️⃣ 统一检索平台（OpenReview / arXiv / Google Scholar）
+
+⸻
+
+1️⃣ CV 顶会：CVPR / ICCV / ECCV（VQA 主战场）
+
+✅ 最权威入口：CVF Open Access
+
+📌 https://openaccess.thecvf.com
+
+🔍 检索方法（强烈推荐）
+	•	进入 CVPR / ICCV / ECCV 某一年
+	•	使用浏览器搜索关键词：
+      VQA
+      Visual Question
+      Question Answering
+      Reasoning
+      Knowledge
+      Scene Graph
+      VideoQA
+      Multimodal
+
+  推荐组合关键词
+    "visual question answering" reasoning
+    "knowledge-based" VQA
+    "scene graph" VQA
+    "video question answering"
+重点年份
+	•	2023–2025（方法最现代）
+	•	CVPR > ICCV > ECCV（数量 & 影响）
+
+👉 要重点盯：
+	•	CVPR Main Conference
+	•	ICCV Main Conference
+⚠️ Workshop 只能当补充
+
+⸻
+
+2️⃣ NLP / Reasoning 顶会：ACL / EMNLP / NAACL / NeurIPS
+
+VQA 现在大量往 NLP / reasoning 靠，特别是：
+	•	Chain-of-Thought
+	•	KB-VQA
+	•	Multi-agent
+	•	LLM-enhanced VQA
+
+⸻
+
+🟣 ACL / EMNLP / NAACL
+
+📌 https://aclanthology.org
+
+🔍 搜索方式
+	•	右上角搜索框输入：
+    visual question answering
+    multimodal reasoning
+    knowledge-based VQA
+
+  特别注意
+	•	ACL/EMNLP = 语言+推理强
+	•	很多 VQA + LLM + reasoning 在这里
+
+⸻
+
+🔵 NeurIPS / ICLR / ICML（高阶 reasoning）
+
+📌 https://openreview.net
+
+🔍 搜索关键词
+    VQA
+    multimodal
+    vision-language
+    reasoning
+    knowledge
+
+在这些 venue 要找的是：
+	•	不是普通 VQA
+	•	而是：
+	•	Reasoning framework
+	•	Modular / agent
+	•	Neuro-symbolic
+	•	Benchmark / evaluation
+
+ Journal：高质量“稳引用”
+
+3️⃣ 医疗 / 遥感 / 通信专项 Venue
+省略
+
+4️⃣ Journal：高质量“稳引用”
+🏆 推荐 Journal
+Journal           适合方向
+---------------------------------
+TPAMI           VQA / VLM 顶级
+TMM             多模态 / 视频
+TAI             LLM + reasoning
+JMLR            理论 / benchmark
+
+IEEE Xplore：https://ieeexplore.ieee.org
+
+🔍 搜索时：
+	•	Filter → Journals only
+	•	年份 → 最近 3 年
+
+⚠️ IEEE Access 只能当 B 类补充
+
+⸻
+
+5️⃣ arXiv：发现未来 CVPR / NeurIPS
+
+📌 https://arxiv.org
+
+🔍 分类
+	•	cs.CV
+	•	cs.CL
+	•	cs.AI
+
+🔍 高效搜索
+  "visual question answering" AND reasoning
+  "VQA" AND "large language model"
+  "knowledge-based" VQA
+
+高级技巧
+	•	看 作者是否来自：Google / Meta / FAIR / Microsoft / 清华 / MIT
+	•	看 是否被后续论文大量引用
+
+6️⃣ Google Scholar：反向挖“必读论文”
+
+📌 https://scholar.google.com
+
+🔍 方法（非常重要）
+	1.	搜一个 你认可的好论文
+	2.	点：
+	•	Cited by
+	•	Related articles
+
+👉 这是挖经典 & 延伸工作的最好方式
+
+⸻
+
+🧠 给你一个「黄金工作流」
+
+如果你现在要系统做 VQA research：
+① CVPR / ICCV 2023–2025（主线）
+② ACL / EMNLP / NeurIPS（Reasoning / LLM）
+③ arXiv（追新）
+④ Journal（稳引用）
+⑤ Google Scholar 反向追踪
+
+🚫 常见坑（一定要避开）
+❌ 只在 IEEE Access / 普通 conference 找
+❌ 只搜 “VQA” 不加 reasoning / knowledge
+❌ 不区分 main conference / workshop
+❌ 不看 venue 等级直接引用
+
+=============================================================
+Part 1：2024–2026 必读的 VQA / VLM / Reasoning 论文清单（按方向）
+============================================================
+这些是现在做 VQA / 多模态 / Reasoning / Agent 时，
+审稿人“默认你应该知道”的论文层级。
+
+按 方向 → 代表论文 → Venue 等级 → 该怎么用。
+
+⸻
+
+🔵 A. 通用 VQA / 多模态基础（必读地基）
+
+📌 LLaVA / BLIP 系列
+	•	LLaVA (CVPR / NeurIPS 系列)
+	•	LLaVA-1.5 / LLaVA-NeXT
+	•	BLIP-2 / BLIP-3 (ICML / arXiv → 顶会/顶刊引用)
+
+Venue 等级：A / A+
+怎么用：
+👉 作为 baseline / backbone / capability reference
+
+⸻
+
+🔵 B. Reasoning-centric VQA（主线中的主线）
+
+⭐ Chain-of-Thought / Multi-stage
+	•	LLaVA-CoT (CVPR / arXiv → 强引用)
+	•	CoV: Chain-of-View Prompting (arXiv → 高潜 CVPR)
+	•	ReasonVQA (benchmark，CVPR 系)
+
+⭐ Structured / Neuro-symbolic
+	•	NeSyVQA（思想好，venue 弱，只引用 idea）
+	•	CKCR / KB-VQA with Retrieval（B+）
+
+Venue 等级：A / A− / B+（混合）
+怎么用：
+👉 用 A 类论文撑主线，
+👉 B 类只点到为止（“early works explored …”）
+
+⸻
+
+🔵 C. Knowledge-based VQA（KVQA / KB-VQA）
+
+⭐ 必看
+	•	OK-VQA / A-OKVQA（benchmark）
+	•	ICQ-TransE (IEEE TAI, A−)
+	•	Retrieval-Augmented VQA（CVPR / NeurIPS）
+
+怎么用：
+👉 写 Knowledge grounding / external knowledge 小节
+
+⸻
+
+🔵 D. Agent / Planning / Tool-using VQA（未来 2–3 年核心）
+
+⭐ 代表方向
+	•	Multi-agent VQA frameworks（AAAI / ICCV Workshop）
+	•	Toolformer-style VQA
+	•	Planner–Executor VQA pipelines
+
+⚠️ 注意：
+	•	Workshop / arXiv 多
+	•	概念重要 > venue 暂时
+
+怎么用：
+👉 定位为 emerging direction / future trend
+
+⸻
+
+🔵 E. VideoQA / Medical / RS（领域 VQA）
+
+VideoQA
+	•	NExT-QA
+	•	STAR / DramaQA
+	•	Video-CoT
+
+Medical VQA
+	•	Med-Flamingo
+	•	LLaVA-Med
+	•	PMC-VQA
+
+Remote Sensing
+	•	RS-VQA benchmark
+	•	IGARSS 系列（应用）
+
+怎么用：
+👉 只在 domain section 用，不要拉进通用 VQA 主线
+
+⸻
+
+============================================================
+Part 2：5 分钟判断一篇 VQA paper“值不值得读/引”的方法（非常重要）
+============================================================
+这是以后筛 paper 的核心技能。
+
+⸻
+
+🔍 Step 1：先看 Venue（10 秒）
+Venue                          结论
+-------------------------------------------------
+CVPR / ICCV / ECCV           必读
+NeurIPS / ICML / ICLR        必读（reasoning）
+ACL / EMNLP                  语言+推理重点读
+IEEE TMM / TAI               稳读
+IEEE Access                 ⚠️ 只扫一眼
+Workshop / Thesis           ⚠️ 看想法，不当主线
+
+👉 如果 venue 不行，直接降级期待
+
+🔍 Step 2：看标题关键词（30 秒）
+高价值关键词（出现 2 个以上 = 值得读）
+  reasoning
+  chain-of-thought
+  knowledge
+  retrieval
+  agent
+  planning
+  grounding
+  benchmark
+  evaluation
+
+低价值危险词
+  based on deep learning
+  using CNN
+  novel attention
+  improved accuracy
+
+👉 “based on / using” ≈ 方法老
+
+🔍 Step 3：扫方法图（1 分钟）
+
+问自己 3 个问题：
+
+1️⃣ 是不是 VLM / LLM 时代的？
+	•	❌ CNN + attention = 老
+	•	✅ LLM / prompting / retrieval / tool = 新
+
+2️⃣ 有没有 reasoning path？
+	•	显式 step / graph / plan = 👍
+	•	end-to-end 分类 = 👎
+
+3️⃣ 有没有 generalized setting？
+	•	only MC / only one dataset = ⚠️
+
+⸻
+
+🔍 Step 4：看实验表（1 分钟）
+
+红旗 🚨
+	•	只比 1–2 个 baseline
+	•	只在 VQAv2 或 自造数据
+	•	没有 ablation
+
+绿旗 ✅
+	•	OK-VQA / A-OKVQA / GQA / NExT-QA
+	•	多模型、多 setting
+	•	有 failure analysis
+
+⸻
+
+🔍 Step 5：看作者 & 机构（30 秒）
+
+高概率好论文
+	•	Google / Meta / Microsoft / FAIR
+	•	清华 / MIT / Stanford / CMU / Oxford
+	•	CVPR 常客作者
+
+⸻
+
+🧠 一句话终极判断公式（记住）
+
+好 VQA 论文 = 好 Venue × 新范式 × Reasoning × 可泛化
+
+⸻
+
+📌 最后给你一个“读论文优先级”
+① CVPR / ICCV VQA（必读）
+② NeurIPS / ICLR 多模态 reasoning
+③ ACL multimodal reasoning
+④ arXiv（追新）
+⑤ IEEE Access / workshop（只看 idea）
+
+=======================================
+必读 20 篇 VQA / VLM 论文清单（2024–2026）
+=======================================
+阅读顺序建议：A → B → C → D
+（你不需要一口气全读，但至少“知道它们在干嘛”）
+
+⸻
+
+🅰️ 基础 VLM / VQA Backbone（地基，必须熟）
+
+1. LLaVA
+	•	Venue：CVPR / NeurIPS 系
+	•	Takeaway：开源 VLM 的事实标准，instruction-tuned vision–language 模型
+
+2. LLaVA-1.5
+	•	Venue：CVPR
+	•	Takeaway：数据与指令设计比模型结构更重要
+
+3. LLaVA-NeXT
+	•	Venue：CVPR / arXiv
+	•	Takeaway：多图、多分辨率、多尺度 VQA 的关键改进
+
+4. BLIP-2
+	•	Venue：ICML
+	•	Takeaway：冻结视觉+语言，用中间 Q-Former 对齐（非常经典）
+
+5. BLIP-3
+	•	Venue：arXiv → 顶会/顶刊引用
+	•	Takeaway：系统化的开放多模态训练范式
+
+⸻
+
+🅱️ Reasoning-centric VQA（你主线的核心）
+
+6. LLaVA-CoT
+	•	Venue：CVPR / arXiv
+	•	Takeaway：把 Chain-of-Thought 引入 VQA，多阶段推理
+
+7. CoV: Chain-of-View Prompting
+	•	Venue：arXiv（高潜 CVPR）
+	•	Takeaway：多视角视觉推理，显式“看哪里 + 怎么看”
+
+8. ReasonVQA
+	•	Venue：CVPR 系
+	•	Takeaway：多跳推理 benchmark，比 VQAv2 难一个量级
+
+9. Neuro-Symbolic VQA (NeSyVQA line)
+	•	Venue：早期 + arXiv
+	•	Takeaway：结构化 reasoning 的思想源头（idea > venue）
+
+10. GQA
+	•	Venue：CVPR（经典）
+	•	Takeaway： compositional reasoning 的标志性数据集
+
+⸻
+
+🅲 Knowledge-based / Retrieval-augmented VQA
+
+11. OK-VQA
+	•	Venue：CVPR
+	•	Takeaway：VQA + 外部知识的基准数据集
+
+12. A-OKVQA
+	•	Venue：CVPR
+	•	Takeaway：需要推理 + 知识 +解释的 VQA
+
+13. Retrieval-Augmented VQA
+	•	Venue：CVPR / NeurIPS 系
+	•	Takeaway：VQA 进入 RAG 时代的关键路径
+
+14. ICQ-TransE
+	•	Venue：IEEE TAI
+	•	Takeaway：LLM 增强跨模态 embedding 的 KB-VQA（强 journal）
+
+⸻
+
+🅳 Agent / Planning / Tool-based VQA（未来 2–3 年重点）
+
+15. Toolformer-style Multimodal QA
+	•	Venue：NeurIPS / arXiv
+	•	Takeaway：VQA 不只是回答，而是“会用工具”
+
+16. Multi-Agent VQA Frameworks
+	•	Venue：AAAI / ICCV Workshop
+	•	Takeaway：把 VQA 拆成 planner / executor / verifier
+
+17. Top-Down / Planner-Executor VQA
+	•	Venue：IEEE TMM / arXiv
+	•	Takeaway：从“端到端”转向“过程可控”
+
+⸻
+
+🅴 Benchmark / Evaluation（评审非常看重）
+
+18. Q-Bench
+	•	Venue：arXiv（高潜）
+	•	Takeaway：评测 MLLM 的视觉质量与感知能力
+
+19. VRD-UQA
+	•	Venue：arXiv
+	•	Takeaway：VQA 模型对“不可回答问题”的鲁棒性
+
+20. VQA-CP
+	•	Venue：CVPR（经典）
+	•	Takeaway：检验 shortcut learning / bias 的必用数据集
+  
+✅ 最优阅读策略（现实版）
+	•	精读（10 篇）：1–7, 11–14
+	•	泛读（看图+实验）：8–10, 15–17
+	•	只看 setup & conclusion：18–20
+
+✅ 写论文时的安全用法
+	•	Backbone：LLaVA / BLIP
+	•	Reasoning：LLaVA-CoT / CoV / ReasonVQA
+	•	Knowledge：OK-VQA / A-OKVQA / ICQ-TransE
+	•	Future trend：Agent / Tool-based VQA
+	•	Evaluation：Q-Bench / VRD-UQA
+
